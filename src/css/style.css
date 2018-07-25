@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "nautilus";
+  src: url(../fonts/nautilus/nautiluspompilius.ttf);
+}
+body {
+  background-image: url(../img/background.jpg);
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.container-1 {
+  font-family: "nautilus";
+  font-size: 20px;
+  color: #eafdff;
+}
+.container-1 h1 {
+  font-family: "nautilus";
+  font-size: 36px;
+  color: #eafdff;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.container-1,
+.container-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 1140px;
+}
+
+.container-2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.container-2 .lesson {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #68f3ff;
+  border-radius: 50px;
+  width: 355px;
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.container-2 .lesson:nth-child(3), .container-2 .lesson:nth-child(6), .container-2 .lesson:nth-child(9), .container-2 .lesson:nth-child(12), .container-2 .lesson:nth-child(13), .container-2 .lesson:nth-child(16) {
+  margin-right: 0;
+}
+.container-2 .lesson__title {
+  font-size: 25px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 300px;
+  margin: 8px auto;
+  border: 2px solid #0eddef;
+  border-radius: 25px;
+}
+.container-2 .lesson-submenu {
+  color: #add3d6;
+  display: none;
+}
+.container-2 .lesson-submenu__title {
+  margin-bottom: 15px;
+}
+.container-2 .lesson:hover {
+  z-index: 10;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.8s;
+          transition: 0.8s;
+}
+.container-2 .lesson:hover .lesson-submenu {
+  display: block;
+  -webkit-transition: 5s;
+          transition: 5s;
+}
+
+a {
+  text-transform: uppercase;
+  color: #caf6f9;
+}
+
+/*# sourceMappingURL=style.css.map */
